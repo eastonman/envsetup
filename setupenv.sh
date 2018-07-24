@@ -6,7 +6,8 @@ read -p "Please input:" opt
 case $opt in
     1)
         apt update 1>&-
-        apt install curl screen wget psmisc vim glances speedtest-cli 1>&-
+        echo 'Install basic server manage package...'
+        apt install curl screen wget psmisc vim glances 1>&-
         echo 'Apt install success!'
         ;;
     2)
